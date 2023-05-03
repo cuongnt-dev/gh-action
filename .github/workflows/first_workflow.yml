@@ -1,12 +1,21 @@
 name: First workflow
 on: workflow_dispatch
 jobs:
-  first_job:
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print step 1
-        run: echo "Print step 1"
-      - name: Print step 2
-        run: echo "Print step 2"
-      - name: Print step 3
-        run: echo "Print step 3"
+      - name: Print build 1
+        run: echo "Print build 1"
+      - name: Print build 2
+        run: echo "Print build 2"
+      - name: Print build 3
+        run: echo "Print build 3"
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build 4
+        run: echo "Print build 4"
+      - name: Print build 5
+        run: echo "Print build 5"
+      - name: Print build 6
+        run: echo "Print build 6"
