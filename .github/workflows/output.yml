@@ -1,9 +1,0 @@
-name: Output workflow
-on: push
-jobs:
-    Print_Information:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Print variable
-              run: echo "${{ toJSON(github) }}"
-
