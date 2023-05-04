@@ -1,4 +1,4 @@
-name: Issue Workflow
+name: Issue_Workflow
 on: 
   issues:
     types: [opened,deleted]
