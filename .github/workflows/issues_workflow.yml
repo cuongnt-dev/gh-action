@@ -1,8 +1,8 @@
-name: Issue_Workflow
+name: Handle issues
 on: issues
 jobs:
-  Trigger_Issues:
+  output-info:
     runs-on: ubuntu-latest
     steps:
-      - name: Print_Info
-        run: echo "${{ toJSON(github.event.issue) }}"
+      - name: Output event details
+        run: echo "${{ toJSON(github.event) }}"
